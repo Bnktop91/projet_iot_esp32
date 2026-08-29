@@ -58,3 +58,10 @@ docker-compose up
 - **Console ESP32 :** `mpremote repl`
 - **Souscription MQTT :** `mosquitto_sub -h <IP_BROKER> -t "capteur/test"`
 - **Dashboard Node-RED :** `http://localhost:1880/dashboard`
+
+
+![Dashboard Node-RED : Supervision sur 24h de la température et de l'humidité en intérieur](images/dashboard_nodered.png)
+
+![Architecture du flux Node-RED : Souscription MQTT, parsing JSON et affichage](images/flow_nodered.png)
+
+![Montage matériel du prototype : ESP32 et capteur DHT11 en acquisition](images/Setup.jpeg)
