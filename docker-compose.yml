@@ -1,0 +1,19 @@
+version: '3.3'
+
+services: 
+  # Serveur de messages
+  broker:
+    image: eclipse-mosquitto:1.6.15 #version sans mdp
+    ports: 
+      - "1883:1883" #port de départ (pc):port d'arrivé (mosquitto). Port MQTT
+  # Interface graphique Node-RED
+  nodered:
+    image: nodered/node-red:latest
+    ports: 
+      - "1880:1880"
+    volumes:
+      - nodered_data:/data
+
+# Déclaration des volumes
+volumes:
+  nodered_data: 

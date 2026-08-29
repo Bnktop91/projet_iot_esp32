@@ -1,0 +1,1 @@
+# boot.py : Exécuté en 1er à l'allumage
